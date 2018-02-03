@@ -18,7 +18,6 @@ import org.w3c.dom.Element;
 </pre></code>
 
 <h7>Instanciamos as classes</h7>
-
 <code><pre>
 public class Lichia {
          public static void main(String[] args) throws Exception{ 
