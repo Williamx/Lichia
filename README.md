@@ -63,6 +63,6 @@ public class Lichia {
 <h7>Entendendo o Codigo...</h7><BR>
 <B>Agora podemos utilizar um loop para retornar um valor especifico.</B>
 <code><pre>for (int i = 0; i < lerxml.LerXML().getLength(); i++) {
-              System.out.println(lerxml.LerXML().item(i).getNodeName()+"--->"+
-                                 lerxml.LerXML().item(i).getTextContent()
+              System.out.println(<B>lerxml.LerXML().item(i).getNodeName()</B>+"--->"+
+                                 <B>lerxml.LerXML().item(i).getTextContent()</B>
               );</pre></code>
