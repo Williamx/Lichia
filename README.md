@@ -22,9 +22,9 @@ import org.w3c.dom.Element;
 <code><pre>
 public class Lichia {
          public static void main(String[] args) throws Exception{ 
-          LichiaHTTP conectar = new LichiaHTTP();        
-          conectar.setMetodo("GET");        
-          conectar.setEndereco("http://url.com/xmlString");        
+         LichiaHTTP conectar = new LichiaHTTP();        
+         conectar.setMetodo("GET");        
+         conectar.setEndereco("http://url.com/xmlString");        
             try{       
                  LichiaXML lerxml = new LichiaXML();        
                  lerxml.setXMLTag("*");        
@@ -32,8 +32,8 @@ public class Lichia {
                        for (int i = 0; i < lerxml.LerXML().getLength(); i++) 
                                   {              
                                      System.out.println(
-                              lerxml.LerXML().item(i).getNodeName()+"--->"+
-                              lerxml.LerXML().item(i).getTextContent() 
+                                     lerxml.LerXML().item(i).getNodeName()+"--->"+
+                                     lerxml.LerXML().item(i).getTextContent() 
                                       );                
                                    } 
                 }
@@ -60,10 +60,6 @@ public class Lichia {
         lerxml.setXMLTag("*");
         lerxml.setXMLString(conectar.Conecta());
         
-        for (int i = 0; i < lerxml.LerXML().getLength(); i++) {
-              System.out.println(lerxml.LerXML().item(i).getNodeName()+"--->"+
-                                 lerxml.LerXML().item(i).getTextContent()
-              );
         
         }
         }catch(Exception e )
@@ -71,4 +67,13 @@ public class Lichia {
          e.getMessage();
        
         }
+ </pre></code>
+<h7>Entendendo o Codigo...</h7><BR>
+<B>Agora podemos utilizar um loop para retornar um valor especifico.</B>
+<code><pre>
+        for (int i = 0; i < lerxml.LerXML().getLength(); i++) {
+              System.out.println(lerxml.LerXML().item(i).getNodeName()+"--->"+
+                                 lerxml.LerXML().item(i).getTextContent()
+              );
+
  </pre></code>
