@@ -46,8 +46,7 @@ public class Lichia {
           
 <h7>Entendendo o Codigo...</h7><BR>
 <B>Instanciamos a classe HTTP responsavel pela conexao.</B>
-<code><pre>
-              LichiaHTTP conectar = new LichiaHTTP(); 
+<code><pre>LichiaHTTP conectar = new LichiaHTTP(); 
               conectar.setMetodo("GET");
               conectar.setEndereco("http://url.com/StringXML");
  </pre></code>
@@ -58,15 +57,13 @@ public class Lichia {
         LichiaXML lerxml = new LichiaXML();
         lerxml.setXMLTag("*");
         lerxml.setXMLString(conectar.Conecta());
-        
-        
+        //loop Aqui....
         }
         }catch(Exception e )
         {
          e.getMessage();
-       
-        }
- </pre></code>
+         }
+</pre></code>
 <h7>Entendendo o Codigo...</h7><BR>
 <B>Agora podemos utilizar um loop para retornar um valor especifico.</B>
 <code><pre>
