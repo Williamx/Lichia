@@ -45,10 +45,30 @@ public class Lichia {
      }
 </pre></code>
           
-<h7>Entendendo o Codigo...</h7>
-<h6>Instanciamos a classe HTTP responsavel pela conexao.</h6>
+<h7>Entendendo o Codigo...</h7><BR>
+<B>Instanciamos a classe HTTP responsavel pela conexao.</B>
 <code><pre>
               LichiaHTTP conectar = new LichiaHTTP(); 
               conectar.setMetodo("GET");
               conectar.setEndereco("http://url.com/StringXML");
+ </pre></code>
+<h7>Entendendo o Codigo...</h7><BR>
+<B>Instanciamos a classe HTTP responsavel pela Abstracao de dados da String oriunda da conexaO HTTP.</B>
+<code><pre>
+        try{
+        LichiaXML lerxml = new LichiaXML();
+        lerxml.setXMLTag("*");
+        lerxml.setXMLString(conectar.Conecta());
+        
+        for (int i = 0; i < lerxml.LerXML().getLength(); i++) {
+              System.out.println(lerxml.LerXML().item(i).getNodeName()+"--->"+
+                                 lerxml.LerXML().item(i).getTextContent()
+              );
+        
+        }
+        }catch(Exception e )
+        {
+         e.getMessage();
+       
+        }
  </pre></code>
