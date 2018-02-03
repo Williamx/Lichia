@@ -1,8 +1,8 @@
-# Lichia
+Lichia
 Biblioteca Java para abstracao de dados apartir de uma String XML 
 
-##Importamos as classes JAVA<pre>
-<code>
+<h7>Importamos as classes JAVA</h7>
+<code><pre>
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -14,11 +14,13 @@ import lichia.LichiaHTTP;
 import java.util.List;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-import org.w3c.dom.Element;</code>
-</pre>
-##Instanciamos as classes
-<code>
-<pre>public class Lichia {
+import org.w3c.dom.Element;
+</pre></code>
+
+<h7>Instanciamos as classes</h7>
+
+<code><pre>
+public class Lichia {
          public static void main(String[] args) throws Exception{ 
           LichiaHTTP conectar = new LichiaHTTP();        
           conectar.setMetodo("GET");        
@@ -30,8 +32,9 @@ import org.w3c.dom.Element;</code>
                        for (int i = 0; i < lerxml.LerXML().getLength(); i++) 
                                   {              
                                      System.out.println(
-                                                        lerxml.LerXML().item(i).getNodeName()+"--->"+                                                                                            lerxml.LerXML().item(i).getTextContent() 
-                                                        );                
+                              lerxml.LerXML().item(i).getNodeName()+"--->"+
+                              lerxml.LerXML().item(i).getTextContent() 
+                                      );                
                                    } 
                 }
                catch(Exception e ) 
@@ -39,10 +42,13 @@ import org.w3c.dom.Element;</code>
                  e.getMessage();               
                  }   
               }    
-     }</pre>
-</code>
-##Entendendo o Codigo...
-  <pre><code>
-                  
-
-  </code></pre>
+     }
+</pre></code>
+          
+<h7>Entendendo o Codigo...</h7>
+<h6>Instanciamos a classe HTTP responsavel pela conexao.</h6>
+<code><pre>
+              LichiaHTTP conectar = new LichiaHTTP(); 
+              conectar.setMetodo("GET");
+              conectar.setEndereco("http://url.com/StringXML");
+ </pre></code>
