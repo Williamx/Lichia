@@ -25,7 +25,7 @@ public class Lichia {
          conectar.setEndereco("http://url.com/xmlString");        
             try{       
                  LichiaXML lerxml = new LichiaXML();        
-                 lerxml.setXMLTag("*");        
+                <B> lerxml.setXMLTag(" * ");</B>        
                  lerxml.setXMLString(conectar.Conecta());                
                        for (int i = 0; i < lerxml.LerXML().getLength(); i++) 
                                   {              
