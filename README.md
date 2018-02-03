@@ -11,7 +11,7 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.ProtocolException;
 import java.net.URL;
-import lichia.LichiaHTTP;
+<B>import lichia.LichiaHTTP;</B>
 import java.util.List;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
