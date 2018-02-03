@@ -1,8 +1,7 @@
 Lichia
 Biblioteca Java para abstracao de dados apartir de uma String XML 
 
-<h7>Importamos as classes JAVA</h7><br>
-<code><pre>
+<h7>Importamos as classes JAVA</h7><br><code><pre>
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -17,8 +16,7 @@ import org.w3c.dom.NodeList;
 import org.w3c.dom.Element;
 </pre></code>
 
-<h7>Instanciamos as classes</h7><br>
-<code><pre>
+<h7>Instanciamos as classes</h7><br><code><pre>
 public class Lichia {
          public static void main(String[] args) throws Exception{ 
          LichiaHTTP conectar = new LichiaHTTP();        
