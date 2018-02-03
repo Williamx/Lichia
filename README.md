@@ -62,14 +62,10 @@ public class Lichia {
         }catch(Exception e )
         {
          e.getMessage();
-         }
-</pre></code>
+         }</pre></code>
 <h7>Entendendo o Codigo...</h7><BR>
 <B>Agora podemos utilizar um loop para retornar um valor especifico.</B>
-<code><pre>
-        for (int i = 0; i < lerxml.LerXML().getLength(); i++) {
+<code><pre>for (int i = 0; i < lerxml.LerXML().getLength(); i++) {
               System.out.println(lerxml.LerXML().item(i).getNodeName()+"--->"+
                                  lerxml.LerXML().item(i).getTextContent()
-              );
-
- </pre></code>
+              );</pre></code>
