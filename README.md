@@ -1,6 +1,6 @@
 Lichia
 ===
-Biblioteca Java para abstracao de dados apartir de uma String XML 
+Biblioteca Java para abstracao de dados apartir de um arquivo  XML 
 
 <h7>Importamos as classes JAVA</h7><BR>
 <B>import lichia.LichiaHTTP;</B><pre>
